@@ -1,0 +1,145 @@
+/* Flex layout containers*/
+
+@media (min-width: 600px) {
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .container3 {
+    display: flex;
+    gap: 3%;
+  }
+
+  .container5 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container1child {
+    text-align: center;
+  }
+}
+/* Container4 with Experience,skills and education does not use flex*/
+.container4 {
+  padding: 20px;
+}
+
+/* Here are some parameters that are to be maintained outside the min width rule*/
+.container1 {
+  margin: 3% 2%;
+}
+.container3 {
+  margin: 5%;
+}
+/* Here I have set parameters for flex items*/
+.container1child {
+  flex-basis: 45%;
+}
+.container2child1 {
+  padding: 0 3%;
+  margin-bottom: 10%;
+}
+.container2child2 {
+  text-align: center;
+}
+.container3item1 {
+  flex-grow: 1;
+  padding: 2%;
+}
+.container3item2 {
+  flex-grow: 2;
+  padding: 2%;
+  text-align: center;
+}
+.container3item3 {
+  flex-grow: 1;
+  padding: 2%;
+}
+
+/* Below are fonts and colours*/
+body {
+  background-color: #c4bfbf;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-weight: 200;
+  margin-top: 30px;
+}
+h3 {
+  font-weight: 100;
+}
+.container1child {
+  color: #fdf9f9;
+}
+.headingsAll {
+  text-shadow: 2px 1px #9b9494;
+  padding: 5px;
+}
+.container3item1,
+.container3item2,
+.container3item3 {
+  border: 2px grey solid;
+}
+.circleLists {
+  list-style-type: circle;
+}
+
+.specialWords {
+  font-weight: 700;
+}
+.specialWords2 {
+  text-decoration: underline;
+}
+/*Picture layout and styling*/
+#picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* Video layout and styling.
+The video disappears if the screen width gets too small*/
+
+@media (max-width: 800px) {
+  #videoContainer {
+    visibility: hidden;
+  }
+}
+
+#adowVideo {
+  width: 512px;
+  height: 288px;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 2;
+}
+
+/*This is the styling for the intetnal page links.
+There is hover styling applied*/
+
+a.pageLink {
+  border: 1px rgb(63, 63, 63) solid;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #c2c2c2;
+  padding: 10px;
+}
+
+a.pageLink:hover {
+  background-color: rgb(201, 238, 215);
+}
+/*I've added this so if the screen gets super narrow the text gets smaller*/
+@media (max-width: 338px) {
+  a.pageLink {
+    font-size: 10px;
+  }
+}
