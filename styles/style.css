@@ -113,6 +113,6 @@ footer {
 }
 @media (max-width: 768px) {
   .pictureFilmStrip {
-    width: 79%;
+    width: 60%;
   }
 }
