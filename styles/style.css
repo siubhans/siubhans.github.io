@@ -9,8 +9,7 @@
 #picture {
   width: 70%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   border-radius: 5px;
   margin-top: 10%;
 }
@@ -18,6 +17,13 @@
   #picture {
     margin-top: 0;
     width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  #picture {
+    margin-top: 0;
+    margin: auto;
+    width: 50%;
   }
 }
 a.contactCol:hover {
