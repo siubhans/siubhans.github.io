@@ -106,8 +106,8 @@ footer {
   list-style-type: square;
 }
 
-.pictureFilmStrip {
-  width: 25%;
+.pictureFilmReel {
+  width: 15%;
   display: block;
   margin: auto;
 }
