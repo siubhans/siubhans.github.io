@@ -1,55 +1,156 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CV: Siubhan Smith Cover</title>
+    <title>CV: Siubhan Smith</title>
+    <!--bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--bootstrap css end-->
     <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="shortcut icon"
       type="image/jpg"
-      href="images/screen-favicon.jpg"
+      href="images/logos/icon-white-circle.png"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="container1">
-      <div class="container1child">
-        <h1 class="headingsAll">Siubhan Smith</h1>
+    <div class="content">
+      <!--navbar start-->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand">
+            <img
+              src="images/logos/icon-white-circle.png"
+              alt="computer with star"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-bottom"
+            />
+            Siubhan Smith
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto mb-1 mb-lg-1">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experience/index.html">Experience</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Credits
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="experience/filmcredits.html"
+                      >Film</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="experience/tvcredits.html"
+                      >TV</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--navbar end-->
+
+      <!--about section start-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 p-5">
+            <h2 id="aboutHeading">About</h2>
+
+            <p>
+              I have 10 years experience in Visual Effects production. I have
+              experience in bidding, client management, financial tracking and
+              all aspects of project management. This includes scheduling,
+              leading a team and seeing projects from conception to completion.
+              I have an in depth understanding of 2D and 3D pipelines and I am
+              highly proficient in Shotgrid, MS Office, and FilemakerPro.
+            </p>
+          </div>
+          <div class="col-lg-6 p-4">
+            <img id="picture" src="images/siubhan.jpeg" />
+          </div>
+        </div>
       </div>
-      <div class="container1child">
-        <h1 class="headingsAll">Visual Effects Producer</h1>
+
+      <!--about section end-->
+      <!--CONTACT start-->
+      <div class="contactContainer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 contactPadding">
+              <h2 id="aboutHeading">Contact</h2>
+              <ul class="contactList">
+                <li>
+                  <a class="emailLink" href="mailto:siubhansmith@gmail.com"
+                    >email: siubhansmith@gmail.com</a
+                  >
+                </li>
+                <br />
+                <li>phone: 087-0000-000</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+      <!--CONTACT end-->
+      <img
+        class="pictureFilmStrip"
+        src="images/logos/film-strip.jpg"
+        alt="Film strip"
+      />
     </div>
 
-    <div class="container2">
-      <div class="container2child1">
-        I have 10 years experience in Visual Effects production. I have
-        experience in bidding, client management, financial tracking and all
-        aspects of project management. This includes scheduling, leading a team
-        and seeing projects from conception to completion. I have an in depth
-        understanding of 2D and 3D pipelines and I am highly proficient in
-        Shotgrid, MS Office, and FilemakerPro.
-      </div>
-      <div class="container2child2">
-        <a class="pageLink" href="experience/index.html"
-          >Go to Experience, Skills and Education</a
-        >
-      </div>
+    <!--footer start-->
+    <div class="footerContainer">
+      <footer>
+        <p>Siubhan Smith, VFX Producer</p>
+        <a href="https://www.imdb.com/name/nm4980780/" target="blank"
+          ><img alt="imdb logo" src="images/logos/imdb-logo.png" width="50px"
+        /></a>
+      </footer>
     </div>
+    <!--footer end-->
 
-    <img id="picture" src="images/siubhan.jpeg" />
-
-    <div class="container3">
-      <div class="container3item1">
-        <h3>email: siubhan@email.com</h3>
-      </div>
-      <div class="container3item2">
-        <a href="https://www.imdb.com/name/nm4980780/" target="_blank"
-          ><h3>IMDB link</h3></a
-        >
-      </div>
-      <div class="container3item3">
-        <h3>phone number: 087-0000-000</h3>
-      </div>
-    </div>
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!--bootstrap js-->
   </body>
 </html>

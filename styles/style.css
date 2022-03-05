@@ -1,146 +1,118 @@
-/* Flex layout containers*/
-
-@media (min-width: 600px) {
-  .container1 {
-    display: flex;
-    justify-content: space-between;
-  }
-  .container2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .container3 {
-    display: flex;
-    gap: 3%;
-  }
-
-  .container5 {
-    display: flex;
-    justify-content: space-around;
-  }
-  .container1child {
-    text-align: center;
-  }
-}
-/* Container4 with Experience,skills and education does not use flex*/
-.container4 {
-  padding: 20px;
+.navbar-brand {
+  font-size: 30px;
+  letter-spacing: 2px;
 }
 
-/* Here are some parameters that are to be maintained outside the min width rule*/
-.container1 {
-  margin: 3% 2%;
+.footerGrey {
+  background-color: #272b30;
 }
-.container3 {
-  margin: 5%;
-}
-/* Here I have set parameters for flex items*/
-.container1child {
-  flex-basis: 45%;
-}
-.container2child1 {
-  padding: 0 3%;
-  margin-bottom: 10%;
-}
-.container2child2 {
-  text-align: center;
-}
-.container3item1 {
-  flex-grow: 1;
-  padding: 2%;
-}
-.container3item2 {
-  flex-grow: 2;
-  padding: 2%;
-  text-align: center;
-}
-.container3item3 {
-  flex-grow: 1;
-  padding: 2%;
-}
-
-/* Below are fonts and colours*/
-body {
-  background-color: #c4bfbf;
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-  font-size: 40px;
-}
-h2 {
-  font-weight: 200;
-  margin-top: 30px;
-}
-h3 {
-  font-weight: 100;
-}
-.container1child {
-  color: #fdf9f9;
-}
-.headingsAll {
-  text-shadow: 2px 1px #9b9494;
-  padding: 5px;
-}
-.container3item1,
-.container3item2,
-.container3item3 {
-  border: 2px grey solid;
-}
-.circleLists {
-  list-style-type: circle;
-}
-
-.specialWords {
-  font-weight: 700;
-}
-.specialWords2 {
-  text-decoration: underline;
-}
-/*Picture layout and styling*/
 #picture {
+  width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border-radius: 10px;
+  border-radius: 5px;
+  margin-top: 10%;
 }
-/* Video layout and styling.
-The video disappears if the screen width gets too small*/
-
-@media (max-width: 800px) {
-  #videoContainer {
-    visibility: hidden;
+@media (max-width: 768px) {
+  #picture {
+    margin-top: 0;
+    width: 90%;
+  }
+}
+a.contactCol:hover {
+  color: rgb(114, 114, 112);
+}
+#aboutHeading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#film {
+  text-align: center;
+  padding: 20px;
+}
+.card {
+  background-color: #fffaef;
+}
+.headingsAll {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .credentialLists {
+    padding: 5%;
+    font-size: 18px;
   }
 }
 
-#adowVideo {
-  width: 512px;
-  height: 288px;
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  z-index: 2;
+.specialWords {
+  font-weight: bold;
+}
+.specialWords2 {
+  font-style: italic;
 }
 
-/*This is the styling for the intetnal page links.
-There is hover styling applied*/
-
-a.pageLink {
-  border: 1px rgb(63, 63, 63) solid;
-  border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #c2c2c2;
-  padding: 10px;
+.circleLists {
+  list-style-type: circle;
+}
+.experienceContainer {
+  margin-top: 5%;
+}
+.experienceCol {
+  border: #797979 groove 2px;
+  border-radius: 5px;
+  margin: 2%;
+  background-color: #fffaef;
+}
+/*footer style start*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #272b30;
+  color: #f5f0f0;
+  margin-top: 1.5rem;
+  padding: 1%;
+}
+.content {
+  flex: 1;
+}
+/*footer style end*/
+.contactContainer {
+  background-color: #f3eddd;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contactPadding {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.emailLink {
+  text-decoration: none;
+  color: black;
 }
 
-a.pageLink:hover {
-  background-color: rgb(201, 238, 215);
+.emailLink:hover {
+  color: darkorchid;
 }
-/*I've added this so if the screen gets super narrow the text gets smaller*/
-@media (max-width: 338px) {
-  a.pageLink {
-    font-size: 10px;
+.contactList {
+  list-style-type: square;
+}
+
+.pictureFilmStrip {
+  width: 25%;
+  display: block;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .pictureFilmStrip {
+    width: 80%;
   }
 }
